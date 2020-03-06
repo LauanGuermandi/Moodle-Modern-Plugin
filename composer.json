@@ -30,6 +30,9 @@
     },
     "scripts": {
         "post-package-install": [
+            "@postisanatll"
+        ],
+        "postinstall":[
             "Modern\\Scripts\\CreateStructure::postPackageInstall"
         ]
     }
