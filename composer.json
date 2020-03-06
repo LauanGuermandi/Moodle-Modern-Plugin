@@ -3,6 +3,7 @@
     "description": "A custom build to make plugin using modern PHP language.",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Lauan Guermandi",
