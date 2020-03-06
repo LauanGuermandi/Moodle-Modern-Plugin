@@ -1,0 +1,13 @@
+{
+    "name": "lauanguermandi/moodle-modern-plugin",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lauan Guermandi",
+            "email": "lauanguermandi@gmail.com"
+        }
+    ],
+    "require": {},
+    "description": "A custom build to make plugin using modern PHP language."
+}
