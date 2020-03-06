@@ -22,6 +22,11 @@
             "App\\Traits\\": "./../traits"
         }
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
     "scripts": {
         "post-package-install": [
             "Modern\\Scripts\\CreateStructure::postPackageInstall"
