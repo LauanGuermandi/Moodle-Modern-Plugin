@@ -1,5 +1,6 @@
 {
     "name": "lauanguermandi/moodle-modern-plugin",
+    "description": "A custom build to make plugin using modern PHP language.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -8,6 +9,22 @@
             "email": "lauanguermandi@gmail.com"
         }
     ],
-    "require": {},
-    "description": "A custom build to make plugin using modern PHP language."
+    "require": {
+        "eftec/bladeone": "^3.36"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modern\\": "./",
+            "Modern\\Classes\\": "./classes",
+            "Modern\\Traits\\": "./traits",
+            "Modern\\Scripts\\": "./scripts",
+            "App\\Classes\\": "./../classes",
+            "App\\Traits\\": "./../traits"
+        }
+    },
+    "scripts": {
+        "post-package-install": [
+            "Modern\\Scripts\\CreateStructure::postPackageInstall"
+        ]
+    }
 }
